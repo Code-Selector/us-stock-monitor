@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: us-stock-monitor-web
+  profiles:
+    active: dev
+
+logging:
+  level:
+    root: info
+
+# MyBatisPlus 的配置
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type:
+      update-strategy: not_empty
+  mapper-locations: classpath*:/mappers/*.xml
+
+# 百度翻译 API（从环境变量读取）
+baidu:
+  translate:
+    host: ${BAIDU_TRANSLATE_HOST}
+    appid: ${BAIDU_TRANSLATE_APPID}
+    securityKey: ${BAIDU_TRANSLATE_SECURITYKEY}
+
+# 钉钉机器人配置（从环境变量读取）
+dingding:
+  token: ${US_STOCK_DINGTALK_TOKEN}
+  secret: ${US_STOCK_DINGTALK_SECRET}
+  userid: ${US_STOCK_DINGTALK_USER_ID}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/us_stock_monitor_dev/stock-mcp/src/main/resources/mappers/USStockRssMapper.xml" value="830cf3f3-3d4c-429c-ba7e-df1ab250bc34" />
+  </component>
+</project>
